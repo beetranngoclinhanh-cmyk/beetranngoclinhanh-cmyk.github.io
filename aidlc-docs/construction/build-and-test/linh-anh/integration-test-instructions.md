@@ -1,5 +1,7 @@
 # Linh Anh — Integration Test Instructions
 
+Cleanup update: inherited Hùng modules/tests and the unused ZIP have been removed. Current suite: 4 files, 14 tests passed; production build passed. Earlier 88-test totals below are historical.
+
 There is one static unit and no service/database integrations. Relevant integration checks connect the root, typed data, navigation, browser actions and packaged assets.
 
 ## Automated component integration

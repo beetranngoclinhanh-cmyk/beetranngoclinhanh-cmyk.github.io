@@ -1,5 +1,7 @@
 # Linh Anh — Build and Test Summary
 
+Cleanup update: inherited Hùng modules/tests and the unused ZIP have been removed. Current suite: 4 files, 14 tests passed; production build passed. Earlier 88-test totals below are historical.
+
 ## Outcome
 
 The generated website was explicitly approved by the user. Formal Build and Test handoff is complete using the successful implementation verification. This stage changes documentation only, so the passing build/test/browser checks were reused rather than repeated without cause.

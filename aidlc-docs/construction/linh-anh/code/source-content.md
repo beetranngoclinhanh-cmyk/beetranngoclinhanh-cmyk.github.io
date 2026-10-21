@@ -1,6 +1,6 @@
 # Source Content and Asset Provenance
 
-Sources: supplied clean Resume DOCX and local Linh Anh application ZIP. Originals preserved at workspace root. ZIP entries extracted selectively to temporary storage; the archive itself and unused source evidence are not public assets.
+Sources: supplied clean Resume DOCX and local Linh Anh application ZIP. The original clean resume is preserved at workspace root. ZIP entries were extracted selectively during implementation; the unnecessary ZIP was later removed at the user’s request. Curated evidence and extracted text remain available.
 
 ## Source review
 

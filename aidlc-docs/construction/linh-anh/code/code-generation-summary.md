@@ -1,5 +1,7 @@
 # Linh Anh — Code Generation Summary
 
+Latest cleanup: removed inherited documents/assets, retired code/tests and source ZIP at the user’s request. Current verification: 14 tests in 4 files passed and production build passed. Earlier 88-test results below describe the pre-cleanup tree.
+
 ## Result
 
 Implemented the approved single-page English portfolio with a warm yellow background, dark ink and cream palette, code-native bee motif, editorial typography and source-backed content. All eight stories are implemented. No deployment or push performed.

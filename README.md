@@ -32,4 +32,4 @@ npm run build
 npm run preview
 ```
 
-The production output is `dist/`. See `DEPLOYMENT.md` for GitHub Pages. AI-DLC plans, source notes and verification records live under `aidlc-docs/` and are not website content. Inherited source modules remain where useful for history/shared checks, but the current App does not expose the old template, journal or career-talk routes.
+The production output is `dist/`. See `DEPLOYMENT.md` for GitHub Pages. AI-DLC plans, source notes and verification records live under `aidlc-docs/` and are not website content. The current source tree contains Linh Anh’s portfolio; retired template, journal and career-talk modules have been removed.

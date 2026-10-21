@@ -1,5 +1,7 @@
 # Linh Anh — Unit and Component Test Instructions
 
+Cleanup update: inherited Hùng modules/tests and the unused ZIP have been removed. Current suite: 4 files, 14 tests passed; production build passed. Earlier 88-test totals below are historical.
+
 Run from the repository root:
 
 ```sh
