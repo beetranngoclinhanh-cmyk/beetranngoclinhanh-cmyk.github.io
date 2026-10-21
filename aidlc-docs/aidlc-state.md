@@ -66,3 +66,9 @@ This new request supersedes the inherited NUS career-talk workflow for this chec
 - [x] Verify current website tests and production build — 14 tests in 4 files passed; build passed.
 
 Latest completed action: user-requested repository cleanup. Previous 88-test record predates removal of retired Hùng modules/tests. Website behaviour remains unchanged; Operations placeholder approval is still pending.
+
+## Navigation Typography and Caption Amendment
+
+- [x] Enlarge navigation to 16px and adjust disclosure breakpoint.
+- [x] Centre/inset the illustration caption away from the curved border.
+- [x] Production build and seven-width browser verification passed.

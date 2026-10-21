@@ -10791,3 +10791,42 @@ please remove all irrelevant documents from hung, along with unnecessary zip"
 **Context**: All cleanup plan steps complete. Removed retired-module tests; current website tests retained. Generated bundle and asset names unchanged. No deployment performed.
 
 ---
+
+## Deployment Diagnosis
+**Timestamp**: 2026-10-21T15:09:07Z
+**User Input**: "# Context from my IDE setup:
+
+## Open tabs:
+- sim-lse-analysis.pdf: src/assets/linh-anh/sim-lse-analysis.pdf
+- green-consumer-research.pdf: src/assets/linh-anh/green-consumer-research.pdf
+- linh-anh-website-questions.md: aidlc-docs/inception/requirements/linh-anh-website-questions.md
+
+## My request:
+please help me check github deployment: [https://beetranngoclinhanh-cmyk.github.io/](https://beetranngoclinhanh-cmyk.github.io/)"
+**AI Response**: "Live root returns 200 but serves source HTML with /src/main.tsx and unexpanded %BASE_URL%. Built JS and /bee.svg return 404; /public/bee.svg returns 200. Custom Vite workflow 39618671643 and dynamic Jekyll workflow 39618670868 both succeeded for commit 36d1e44. Evidence indicates branch-based Pages publishing is competing with custom built-output deployment. Change repository Settings > Pages > Source to GitHub Actions, then run Deploy to GitHub Pages on main. Connected repository permissions show admin=false and maintain=false, so this session cannot change Pages settings. No remote writes or workflow reruns performed."
+**Context**: Read-only diagnosis using GitHub connector and public HTTP checks. Official GitHub documentation confirms custom Actions publishing-source selection.
+
+---
+
+## Navigation Typography and Caption Spacing
+**Timestamp**: 2026-10-21T15:18:21Z
+**User Input**: "# Context from my IDE setup:
+
+## Open tabs:
+- sim-lse-analysis.pdf: src/assets/linh-anh/sim-lse-analysis.pdf
+- green-consumer-research.pdf: src/assets/linh-anh/green-consumer-research.pdf
+- linh-anh-website-questions.md: aidlc-docs/inception/requirements/linh-anh-website-questions.md
+
+## My request:
+please increase the font size for major headers such as image 1 and fix the wording touching boundary"
+**AI Response**: "Enlarge the top navigation labels and inset the bee illustration caption so it clears the curved border."
+**Context**: Two supplied screenshots identify top navigation and illustration caption. Focused CSS amendment; no unrelated content changes.
+
+---
+
+## Navigation Typography and Caption Spacing — Complete
+**Timestamp**: 2026-10-21T15:19:12Z
+**AI Response**: "Increased navigation labels from 12px to 16px, switched to disclosure navigation earlier, and centred/inset the illustration caption away from its curved border. Production build passed. Seven viewport widths checked with no horizontal overflow; desktop screenshot reviewed."
+**Context**: Focused CSS update complete; optional extensions disabled. No deployment performed.
+
+---
