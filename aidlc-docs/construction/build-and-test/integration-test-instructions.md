@@ -1,5 +1,7 @@
 # Integration Test Instructions
 
+Current Linh Anh workflow: [instructions/results](linh-anh/integration-test-instructions.md). Earlier records below are historical.
+
 ## Purpose
 
 Verify that the application shell, Business presentation, shared data, routes, and journal pages work together after the README and contact-color amendment.

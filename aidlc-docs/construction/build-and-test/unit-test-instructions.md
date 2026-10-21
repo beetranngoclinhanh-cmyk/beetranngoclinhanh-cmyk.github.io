@@ -1,5 +1,7 @@
 # Unit Test Execution Instructions
 
+Current Linh Anh workflow: [instructions/results](linh-anh/unit-test-instructions.md). Earlier records below are historical.
+
 ## Purpose
 
 Run the deterministic tests that protect typed data, navigation, layout helpers, template selection, registry behavior, CSS isolation, and accessibility safeguards.

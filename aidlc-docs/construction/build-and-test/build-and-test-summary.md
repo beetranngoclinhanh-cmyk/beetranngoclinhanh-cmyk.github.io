@@ -1,5 +1,7 @@
 # Build and Test Summary
 
+Current Linh Anh workflow: [instructions/results](linh-anh/build-and-test-summary.md). Earlier records below are historical.
+
 Latest workflow: [NUS Career Talk results](nus-career-talk/build-and-test-summary.md). The previous workflow results below are retained as historical evidence.
 
 ## Outcome
