@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Supplied evidence archives are extracted and must not be committed.
+*.zip

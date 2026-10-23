@@ -10830,3 +10830,78 @@ please increase the font size for major headers such as image 1 and fix the word
 **Context**: Focused CSS update complete; optional extensions disabled. No deployment performed.
 
 ---
+
+## Evidence and Awards Amendment
+**Timestamp**: 2026-10-23T11:59:09Z
+**User Input**: "# Context from my IDE setup:
+
+## Open tabs:
+- sim-lse-analysis.pdf: src/assets/linh-anh/sim-lse-analysis.pdf
+- green-consumer-research.pdf: src/assets/linh-anh/green-consumer-research.pdf
+- linh-anh-website-questions.md: aidlc-docs/inception/requirements/linh-anh-website-questions.md
+
+## My request:
+Please fix the following issues, make sure all evidence within the zip are used and the zip itself is thrown away and not committed after you're done:
+
+Sửa portfolio
+- Sửa tên ở quantitative finance ở selected work thành data/finance 
+- Thêm ảnh ở các mục giải
+- Phần research ở hust thầy thêm giúp con 2 confirmation letter con gắn ở trong cv 
+- Danh mục giải thưởng thầy có thể đẩy: theo thứ tự Giải toán -> WICO -> John Locke -> FDB Talent -> cnn science fair -> IOE (internet olympic english ạ)
+
+"
+**AI Response**: "Đổi nhãn thành Data/Finance, sắp xếp lại giải, thêm ảnh có minh chứng, hai thư HUST và toàn bộ 24 tệp vào Evidence notebook. Thư mục SIAM trống nên không giả lập ảnh chứng nhận. Kiểm tra 17 tests, build, bố cục bốn kích thước và 24 liên kết. Xoá ZIP sau khi xác nhận đầy đủ tệp; thêm *.zip vào gitignore."
+**Context**: Explicit user amendment supersedes earlier preservation/withholding of source ZIP and signed evidence. PDFs/HEIC/HEIF/video verified by hash; images optimised. No commit or deployment. Full provenance in evidence-inventory.md.
+
+---
+
+## Larger Previews and Missing Photo Display
+**Timestamp**: 2026-10-23T12:07:44Z
+**User Input**: "# Context from my IDE setup:
+
+## Open tabs:
+- evidence-06.pdf: src/assets/linh-anh/evidence/evidence-06.pdf
+- sim-lse-analysis.pdf: src/assets/linh-anh/sim-lse-analysis.pdf
+- green-consumer-research.pdf: src/assets/linh-anh/green-consumer-research.pdf
+- linh-anh-website-questions.md: aidlc-docs/inception/requirements/linh-anh-website-questions.md
+
+## My request:
+the image preview is too small, also, there are still images not yet included right?"
+**AI Response**: "Enlarged awards into full-size image cards, expanded all evidence collections by default, and recovered previews for the Bản Miền HEIF and American Center HEIC photographs using native macOS conversion. All 24 evidence files remain linked, with 23 image/document previews and one on-demand video. SIAM certificate remains absent from supplied files. 18 tests, production build, 24 HTTP link checks and four-width browser verification passed."
+**Context**: User screenshot showed undersized award rows. Previous black previews resulted from restricted conversion; corrected native conversion output visually inspected before inclusion. Source ZIP remains deleted/ignored. No commit or deployment performed.
+
+---
+
+## SIAM Filler Image
+**Timestamp**: 2026-10-23T12:09:56Z
+**User Input**: "# Context from my IDE setup:
+
+## Open tabs:
+- evidence-06.pdf: src/assets/linh-anh/evidence/evidence-06.pdf
+- sim-lse-analysis.pdf: src/assets/linh-anh/sim-lse-analysis.pdf
+- green-consumer-research.pdf: src/assets/linh-anh/green-consumer-research.pdf
+- linh-anh-website-questions.md: aidlc-docs/inception/requirements/linh-anh-website-questions.md
+
+## My request:
+please add a filler image for Siam first"
+**AI Response**: "Added a code-native mathematics SVG placeholder with an explicit illustration/certificate-not-supplied label."
+**Context**: Focused user-authorised visual amendment. SVG XML validated before writing. No certificate evidence invented.
+
+---
+
+## Video Filler Image
+**Timestamp**: 2026-10-23T12:10:44Z
+**User Input**: "# Context from my IDE setup:
+
+## Open tabs:
+- evidence-06.pdf: src/assets/linh-anh/evidence/evidence-06.pdf
+- sim-lse-analysis.pdf: src/assets/linh-anh/sim-lse-analysis.pdf
+- green-consumer-research.pdf: src/assets/linh-anh/green-consumer-research.pdf
+- linh-anh-website-questions.md: aidlc-docs/inception/requirements/linh-anh-website-questions.md
+
+## My request:
+do the same for the video"
+**AI Response**: "Add a labelled stage-themed SVG filler image to the existing video card; retain the original recording link and no autoplay."
+**Context**: Focused visual amendment following the SIAM placeholder request. SVG validated before writing.
+
+---

@@ -1,3 +1,6 @@
+import siamPlaceholder from "./assets/linh-anh/siam-mathematics-placeholder.svg";
+import EvidenceGallery from "./components/linh-anh/EvidenceGallery";
+import { getEvidence } from "./data/evidence";
 import "./App.css";
 import SiteHeader from "./components/linh-anh/SiteHeader";
 import BeeMark from "./components/linh-anh/BeeMark";
@@ -245,6 +248,37 @@ export default function App() {
                   <h3>{entry.title}</h3>
                   <p className="entry-role">{entry.role}</p>
                   <p>{entry.text}</p>
+                  {entry.id === "hust" && (
+                    <div
+                      className="confirmation-letters"
+                      aria-label="HUST confirmation letters"
+                    >
+                      {["evidence-19", "evidence-05"].map((id, index) => {
+                        const letter = getEvidence(id);
+                        return (
+                          <a
+                            key={id}
+                            href={letter.href}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            data-testid={`hust-letter-${index + 1}`}
+                          >
+                            <img
+                              src={letter.preview!}
+                              alt={`HUST signed confirmation letter, Project ${index + 1}`}
+                              width="777"
+                              height="1100"
+                              loading="lazy"
+                            />
+                            <span>
+                              Confirmation letter · Project {index + 1}{" "}
+                              <span aria-hidden="true">↗</span>
+                            </span>
+                          </a>
+                        );
+                      })}
+                    </div>
+                  )}
                   {entry.href && (
                     <EvidenceLink
                       href={entry.href}
@@ -326,9 +360,38 @@ export default function App() {
                 to keep going.
               </h3>
             </div>
-            <div className="award-list">
+            <div className="award-list" data-testid="award-list">
               {awards.map((award) => (
                 <div className="award-row" key={award.title}>
+                  {award.evidence ? (
+                    <a
+                      className="award-evidence"
+                      href={award.evidence.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`View evidence: ${award.title}`}
+                      data-testid={`award-evidence-${award.evidence.id}`}
+                    >
+                      <img
+                        src={award.evidence.preview!}
+                        alt={`${award.title}: supporting photograph or certificate`}
+                        width="800"
+                        height="600"
+                        loading="lazy"
+                      />
+                    </a>
+                  ) : (
+                    <div className="award-image-pending award-illustration">
+                      <img
+                        src={siamPlaceholder}
+                        alt="Mathematics illustration with a summation symbol and geometric patterns; temporary SIAM placeholder."
+                        width="800"
+                        height="560"
+                        loading="lazy"
+                      />
+                      <span>Illustration · certificate not supplied</span>
+                    </div>
+                  )}
                   <span className="award-year">{award.year}</span>
                   <div>
                     <h4>{award.title}</h4>
@@ -383,6 +446,7 @@ export default function App() {
             </div>
           </div>
         </section>
+        <EvidenceGallery />
         <section id="contact" className="contact-section">
           <div className="section-wrap contact-inner">
             <div className="contact-top">

@@ -1,3 +1,4 @@
+import { getEvidence } from "./evidence";
 import dashboard from "../assets/linh-anh/sim-lse.jpg";
 import poster from "../assets/linh-anh/wico-poster.jpg";
 import communityImage from "../assets/linh-anh/community.jpg";
@@ -47,7 +48,7 @@ export const projects = [
   },
   {
     id: "wico",
-    category: "QUANTITATIVE FINANCE / 2026",
+    category: "DATA/FINANCE / 2026",
     title: "A portfolio that responds to change.",
     context: "World Invention Creativity Olympics · Team project",
     question:
@@ -116,33 +117,39 @@ export const experience = [
 export const awards = [
   {
     year: "2026",
-    title: "John Locke Global Essay Prize",
-    detail: "Commendation · Economics",
+    title: "Siam International Math & Science Olympics",
+    detail: "Gold Prize \u00b7 National round",
+    evidence: null,
   },
   {
     year: "2026",
     title: "World Invention Creativity Olympics",
-    detail: "Gold Prize · Finance / Data Science",
+    detail: "Gold Prize \u00b7 Finance / Data Science",
+    evidence: getEvidence("evidence-10"),
   },
   {
     year: "2026",
-    title: "Siam International Math & Science Olympics",
-    detail: "Gold Prize · National round",
+    title: "John Locke Global Essay Prize",
+    detail: "Commendation \u00b7 Economics",
+    evidence: getEvidence("evidence-23"),
   },
   {
     year: "2026",
     title: "FDB Talent",
-    detail: "Top 5 finalist · High school category",
+    detail: "Top 5 finalist \u00b7 High school category",
+    evidence: getEvidence("evidence-06"),
   },
   {
     year: "2025",
     title: "CNN Natural Sciences Fun Fair",
-    detail: "Third Prize · Physics",
+    detail: "Third Prize \u00b7 Physics",
+    evidence: getEvidence("evidence-14"),
   },
   {
     year: "2023",
     title: "Internet Olympiad English",
-    detail: "Bronze Award · National round",
+    detail: "Bronze Award \u00b7 National round",
+    evidence: getEvidence("evidence-03"),
   },
 ] as const;
 export const skills = [

@@ -72,3 +72,26 @@ Latest completed action: user-requested repository cleanup. Previous 88-test rec
 - [x] Enlarge navigation to 16px and adjust disclosure breakpoint.
 - [x] Centre/inset the illustration caption away from the curved border.
 - [x] Production build and seven-width browser verification passed.
+
+## Evidence and Awards Amendment — 2026-10-23
+
+- [x] Data/Finance label, requested award order, five available award images and two HUST letters.
+- [x] Map all 24 files into the evidence notebook; preserve provenance and original documents.
+- [x] Tests (17), build and four-width browser checks passed; all evidence links return 200 locally.
+- [x] Delete source ZIP and ignore future ZIP archives.
+- Summary: `construction/linh-anh/code/evidence-amendment-summary.md`.
+
+## Larger Evidence Previews
+
+- [x] Large award image cards, expanded evidence collections and recovered previews for both HEIC/HEIF photographs.
+- [x] 18 tests and production build passed; four-width browser checks confirm 23 previews and all 24 file links.
+
+## SIAM Placeholder
+
+- [x] Add labelled mathematics illustration to SIAM card.
+- [x] 18 tests and production build passed.
+
+## Video Placeholder
+
+- [x] Add labelled stage illustration to video card, retaining recording link and on-demand loading.
+- [x] 18 tests and production build passed. All 24 evidence cards now have previews.

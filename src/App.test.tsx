@@ -54,3 +54,60 @@ describe("Linh Anh portfolio", () => {
     expect(screen.getByText("Python (basic)", { exact: false })).toBeVisible();
   });
 });
+
+describe("Evidence and award amendment", () => {
+  it("uses the requested award order and links the supplied award images", () => {
+    render(<App />);
+    const list = screen.getByTestId("award-list");
+    expect(
+      within(list)
+        .getAllByRole("heading", { level: 4 })
+        .map((node) => node.textContent),
+    ).toEqual([
+      "Siam International Math & Science Olympics",
+      "World Invention Creativity Olympics",
+      "John Locke Global Essay Prize",
+      "FDB Talent",
+      "CNN Natural Sciences Fun Fair",
+      "Internet Olympiad English",
+    ]);
+    expect(within(list).getAllByRole("img")).toHaveLength(6);
+    expect(within(list).getByText(/not supplied/)).toBeInTheDocument();
+    expect(screen.getByText("DATA/FINANCE / 2026")).toBeVisible();
+  });
+  it("opens both HUST confirmations as distinct PDFs", () => {
+    render(<App />);
+    const first = screen.getByTestId("hust-letter-1");
+    const second = screen.getByTestId("hust-letter-2");
+    expect(first.getAttribute("href")).toMatch(/\.pdf$/);
+    expect(second.getAttribute("href")).toMatch(/\.pdf$/);
+    expect(first.getAttribute("href")).not.toBe(second.getAttribute("href"));
+    expect(first).toHaveAttribute("rel", "noopener noreferrer");
+  });
+  it("provides all 24 evidence files without eagerly embedding the video", () => {
+    render(<App />);
+    for (let n = 1; n <= 24; n++) {
+      const link = screen.getByTestId(
+        `evidence-${String(n).padStart(2, "0")}-file-link`,
+      );
+      expect(link.getAttribute("href")).toBeTruthy();
+      expect(link).toHaveAttribute("target", "_blank");
+    }
+    expect(document.querySelector("video")).toBeNull();
+    expect(screen.getByTestId("evidence-20-file-link")).toHaveTextContent(
+      "MP4",
+    );
+  });
+});
+
+it("shows every supplied image/document preview and opens evidence collections by default", () => {
+  render(<App />);
+  const gallery = document.getElementById("evidence")!;
+  expect(gallery.querySelectorAll("img")).toHaveLength(24);
+  for (const collection of gallery.querySelectorAll("details"))
+    expect(collection).toHaveAttribute("open");
+  for (const id of ["09", "15", "20"])
+    expect(
+      screen.getByTestId(`evidence-${id}-file-link`).querySelector("img"),
+    ).not.toBeNull();
+});
