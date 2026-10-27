@@ -72,7 +72,11 @@ describe("Evidence and award amendment", () => {
       "Internet Olympiad English",
     ]);
     expect(within(list).getAllByRole("img")).toHaveLength(6);
-    expect(within(list).getByText(/not supplied/)).toBeInTheDocument();
+    expect(within(list).queryByText(/not supplied/)).not.toBeInTheDocument();
+    expect(screen.getByTestId("award-evidence-evidence-25")).toHaveAttribute(
+      "href",
+      expect.stringContaining("Simso.pdf"),
+    );
     expect(screen.getByText("DATA/FINANCE / 2026")).toBeVisible();
   });
   it("opens both HUST confirmations as distinct PDFs", () => {
@@ -84,9 +88,9 @@ describe("Evidence and award amendment", () => {
     expect(first.getAttribute("href")).not.toBe(second.getAttribute("href"));
     expect(first).toHaveAttribute("rel", "noopener noreferrer");
   });
-  it("provides all 24 evidence files without eagerly embedding the video", () => {
+  it("provides 24 source files and the illustrated cover without a video download", () => {
     render(<App />);
-    for (let n = 1; n <= 24; n++) {
+    for (let n = 1; n <= 25; n++) {
       const link = screen.getByTestId(
         `evidence-${String(n).padStart(2, "0")}-file-link`,
       );
@@ -94,8 +98,11 @@ describe("Evidence and award amendment", () => {
       expect(link).toHaveAttribute("target", "_blank");
     }
     expect(document.querySelector("video")).toBeNull();
+    expect(
+      screen.getByTestId("evidence-20-file-link").getAttribute("href"),
+    ).not.toMatch(/\.mp4/);
     expect(screen.getByTestId("evidence-20-file-link")).toHaveTextContent(
-      "MP4",
+      "SVG",
     );
   });
 });
@@ -103,7 +110,7 @@ describe("Evidence and award amendment", () => {
 it("shows every supplied image/document preview and opens evidence collections by default", () => {
   render(<App />);
   const gallery = document.getElementById("evidence")!;
-  expect(gallery.querySelectorAll("img")).toHaveLength(24);
+  expect(gallery.querySelectorAll("img")).toHaveLength(25);
   for (const collection of gallery.querySelectorAll("details"))
     expect(collection).toHaveAttribute("open");
   for (const id of ["09", "15", "20"])

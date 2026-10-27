@@ -48,7 +48,7 @@ export default function EvidenceGallery() {
                         className="evidence-format-placeholder"
                         aria-hidden="true"
                       >
-                        {item.format === "MP4" ? "▶" : item.format}
+                        {item.format}
                       </span>
                     )}
                     <h3>{item.title}</h3>

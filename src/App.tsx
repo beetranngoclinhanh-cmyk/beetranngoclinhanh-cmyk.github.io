@@ -1,4 +1,3 @@
-import siamPlaceholder from "./assets/linh-anh/siam-mathematics-placeholder.svg";
 import EvidenceGallery from "./components/linh-anh/EvidenceGallery";
 import { getEvidence } from "./data/evidence";
 import "./App.css";
@@ -363,35 +362,22 @@ export default function App() {
             <div className="award-list" data-testid="award-list">
               {awards.map((award) => (
                 <div className="award-row" key={award.title}>
-                  {award.evidence ? (
-                    <a
-                      className="award-evidence"
-                      href={award.evidence.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={`View evidence: ${award.title}`}
-                      data-testid={`award-evidence-${award.evidence.id}`}
-                    >
-                      <img
-                        src={award.evidence.preview!}
-                        alt={`${award.title}: supporting photograph or certificate`}
-                        width="800"
-                        height="600"
-                        loading="lazy"
-                      />
-                    </a>
-                  ) : (
-                    <div className="award-image-pending award-illustration">
-                      <img
-                        src={siamPlaceholder}
-                        alt="Mathematics illustration with a summation symbol and geometric patterns; temporary SIAM placeholder."
-                        width="800"
-                        height="560"
-                        loading="lazy"
-                      />
-                      <span>Illustration · certificate not supplied</span>
-                    </div>
-                  )}
+                  <a
+                    className="award-evidence"
+                    href={award.evidence.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`View evidence: ${award.title}`}
+                    data-testid={`award-evidence-${award.evidence.id}`}
+                  >
+                    <img
+                      src={award.evidence.preview!}
+                      alt={`${award.title}: supporting photograph or certificate`}
+                      width="800"
+                      height="600"
+                      loading="lazy"
+                    />
+                  </a>
                   <span className="award-year">{award.year}</span>
                   <div>
                     <h4>{award.title}</h4>

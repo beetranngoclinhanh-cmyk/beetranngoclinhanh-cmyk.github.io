@@ -95,3 +95,15 @@ Latest completed action: user-requested repository cleanup. Previous 88-test rec
 
 - [x] Add labelled stage illustration to video card, retaining recording link and on-demand loading.
 - [x] 18 tests and production build passed. All 24 evidence cards now have previews.
+
+## Asset Consolidation
+
+- [x] Remove 58.5 MB video and identical root resume duplicate.
+- [x] Keep canonical resume/evidence imported under src/assets/linh-anh; illustrated stage cover no longer links to a recording.
+- [x] 18 tests and production build passed; output contains no video or ZIP.
+
+## SIMSO Certificate Added — 2026-10-27
+
+- [x] Integrate newly supplied Simso.pdf and readable preview in SIAM award card and evidence notebook.
+- [x] Remove placeholder SVG and placeholder markup.
+- [x] 18 tests and production build passed; 25 collection items (24 source files plus stage illustration).

@@ -23,3 +23,7 @@ Optional Security Baseline and Property-Based Testing extensions remain disabled
 ## Larger previews follow-up
 
 Awards now use large two-column cards (one column on mobile), with 340px desktop / 300px mobile image areas. Evidence collections open by default. Both previously missing HEIC/HEIF photos now have JPEG previews. Current verification: 18 tests passed; production build passed; 23 previews, five expanded collections and all 24 links checked at four viewport widths without broken images or horizontal overflow.
+
+## Asset consolidation follow-up
+
+The user subsequently requested deletion of the large recording. evidence-20.mp4 has been removed and its card now links only to the labelled stage illustration. The 23 remaining source files and their previews, plus the canonical resume, are kept under src/assets/linh-anh. The identical root resume duplicate has been removed. Earlier recording references above are historical provenance.

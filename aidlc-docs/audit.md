@@ -10905,3 +10905,54 @@ do the same for the video"
 **Context**: Focused visual amendment following the SIAM placeholder request. SVG validated before writing.
 
 ---
+
+## Large File Removal and Asset Consolidation
+**Timestamp**: 2026-10-23T12:15:47Z
+**User Input**: "# Context from my IDE setup:
+
+## Open tabs:
+- evidence-06.pdf: src/assets/linh-anh/evidence/evidence-06.pdf
+- sim-lse-analysis.pdf: src/assets/linh-anh/sim-lse-analysis.pdf
+- green-consumer-research.pdf: src/assets/linh-anh/green-consumer-research.pdf
+- linh-anh-website-questions.md: aidlc-docs/inception/requirements/linh-anh-website-questions.md
+
+## My request:
+please delete the large file if it's present, and integrate resume and evidence into assets"
+**AI Response**: "Removed the 58,484,207-byte MP4 and duplicate root resume after verifying identical bytes. The canonical resume and evidence remain imported from src/assets/linh-anh. Retained the stage illustration as an explicitly labelled image, with no video download link."
+**Context**: User explicitly authorises large-file deletion and asset consolidation. No Git history rewrite, commit or deployment.
+
+---
+
+## SIAM Evidence Availability Check
+**Timestamp**: 2026-10-24T18:15:03Z
+**User Input**: "# Context from my IDE setup:
+
+## Open tabs:
+- evidence-06.pdf: src/assets/linh-anh/evidence/evidence-06.pdf
+- sim-lse-analysis.pdf: src/assets/linh-anh/sim-lse-analysis.pdf
+- green-consumer-research.pdf: src/assets/linh-anh/green-consumer-research.pdf
+- linh-anh-website-questions.md: aidlc-docs/inception/requirements/linh-anh-website-questions.md
+
+## My request:
+please help to check whether the SIAM certificate is actually available from evidence folder"
+**AI Response**: "Inspected current evidence file inventory, source mappings, certificate/photo previews and PDF page/text metadata. No SIAM certificate identified. evidence-06 is FDB Talent; evidence-03 is IOE; evidence-14 CNN Science Fair; evidence-18 stage award; evidence-23 John Locke. SIAM remains an illustration placeholder; original archive inventory recorded its folder as empty."
+**Context**: Read-only evidence inspection; website content unchanged.
+
+---
+
+## SIMSO Certificate Integration
+**Timestamp**: 2026-10-27T14:48:15Z
+**User Input**: "# Context from my IDE setup:
+
+## Open tabs:
+- evidence-06.pdf: src/assets/linh-anh/evidence/evidence-06.pdf
+- sim-lse-analysis.pdf: src/assets/linh-anh/sim-lse-analysis.pdf
+- green-consumer-research.pdf: src/assets/linh-anh/green-consumer-research.pdf
+- linh-anh-website-questions.md: aidlc-docs/inception/requirements/linh-anh-website-questions.md
+
+## My request:
+I've just added simso pdf, please add it in and remove the placeholder"
+**AI Response**: "Located and visually verified the new Simso.pdf: Mathematics Gold Award for Tran Ngoc Linh Anh at the SIMSO 2026 National Round. Added its preview and original PDF to the awards/evidence collection, removed the temporary placeholder asset and markup."
+**Context**: Newly user-supplied file supersedes earlier missing-certificate result. No commit or deployment.
+
+---

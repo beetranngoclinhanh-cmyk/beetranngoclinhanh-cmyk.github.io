@@ -119,7 +119,7 @@ export const awards = [
     year: "2026",
     title: "Siam International Math & Science Olympics",
     detail: "Gold Prize \u00b7 National round",
-    evidence: null,
+    evidence: getEvidence("evidence-25"),
   },
   {
     year: "2026",

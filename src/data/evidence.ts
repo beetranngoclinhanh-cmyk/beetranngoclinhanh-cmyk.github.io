@@ -1,3 +1,5 @@
+import simsoCertificate from "../assets/linh-anh/evidence/Simso.pdf?url";
+import simsoPreview from "../assets/linh-anh/evidence/simso-certificate-preview.jpg";
 import videoPlaceholder from "../assets/linh-anh/stage-video-placeholder.svg";
 import preview9 from "../assets/linh-anh/evidence/evidence-09-preview.jpg";
 import preview15 from "../assets/linh-anh/evidence/evidence-15-preview.jpg";
@@ -37,7 +39,6 @@ import file18 from "../assets/linh-anh/evidence/evidence-18.jpg?url";
 import preview18 from "../assets/linh-anh/evidence/evidence-18.jpg";
 import file19 from "../assets/linh-anh/evidence/evidence-19.pdf?url";
 import preview19 from "../assets/linh-anh/evidence/evidence-19-preview.jpg";
-import file20 from "../assets/linh-anh/evidence/evidence-20.mp4?url";
 import file21 from "../assets/linh-anh/evidence/evidence-21.pdf?url";
 import preview21 from "../assets/linh-anh/evidence/evidence-21-preview.jpg";
 import file22 from "../assets/linh-anh/evidence/evidence-22.pdf?url";
@@ -245,14 +246,14 @@ export const evidence = [
   },
   {
     id: "evidence-20",
-    title: "CNN Vibrant Stage performance video",
+    title: "CNN Vibrant Stage — illustrated cover",
     group: "community",
-    href: file20,
+    href: videoPlaceholder,
     preview: videoPlaceholder,
-    format: "MP4",
-    size: "55.8 MB",
+    format: "SVG",
+    size: "0.9 KB",
     description:
-      "Illustrated video cover. Open the performance recording on request; no autoplay.",
+      "Illustrated stage cover. The original large video has been removed; this image is not a performance recording.",
   },
   {
     id: "evidence-21",
@@ -295,6 +296,17 @@ export const evidence = [
     format: "PDF",
     size: "1.5 MB",
     description: "Supplied supporting evidence. Open the file for full detail.",
+  },
+  {
+    id: "evidence-25",
+    title: "SIMSO 2026 — Mathematics Gold Award",
+    group: "awards",
+    href: simsoCertificate,
+    preview: simsoPreview,
+    format: "PDF",
+    size: "1.0 MB",
+    description:
+      "Gold Award in Mathematics, Senior Secondary, SIMSO 2026 National Round, held on 14 June 2026. Awarded to Tran Ngoc Linh Anh.",
   },
 ] as const;
 export const evidenceGroups = [

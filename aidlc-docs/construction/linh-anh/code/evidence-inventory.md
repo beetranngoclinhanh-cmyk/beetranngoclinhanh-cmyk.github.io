@@ -198,3 +198,15 @@ All 24 source files are represented in the evidence notebook. Images are optimis
 ## Preview follow-up
 
 Native macOS conversion outside the restricted sandbox successfully recovered JPEG previews for evidence-09 and evidence-15. Original HEIF/HEIC files are retained. All 23 image/document entries have a visible preview; the remaining entry is the on-demand video.
+
+## Asset consolidation follow-up
+
+The user subsequently requested deletion of the large recording. evidence-20.mp4 has been removed and its card now links only to the labelled stage illustration. The 23 remaining source files and their previews, plus the canonical resume, are kept under src/assets/linh-anh. The identical root resume duplicate has been removed. Earlier recording references above are historical provenance.
+
+## evidence-25 — Newly supplied SIMSO certificate
+
+- Source: `src/assets/linh-anh/evidence/Simso.pdf` (added by user after the archive import).
+- SHA-256: `7ff032fcbec7a66a662ec730a12fa2d0a9afccfde88519aba13f316c5a1b09cd`.
+- Preview: `src/assets/linh-anh/evidence/simso-certificate-preview.jpg`.
+- Visually verified: Tran Ngoc Linh Anh, Mathematics Gold Award, Senior Secondary, SIMSO 2026 National Round, 14 June 2026.
+- The previous absence/placeholder notes above are superseded by this new file.
